@@ -38,34 +38,34 @@ dynamic data = {
           "lowAge": 0,
           "highAge": 8,
           "info":
-              "Your baby also won't understand that things outside their vision can exist. This is why your baby might start crying as soon as you leave the room: they think you disappeared and you're not coming back."
+              "Your baby also won't understand that things outside their vision can exist (object permeance). This is why your baby might start crying as soon as you leave the room: they think you disappeared and you're not coming back."
         },
         {
           "lowAge": 8,
           "highAge": 12,
           "info":
-              "Your baby can now understand that things don't disappear when they leave their vision."
+              "Your baby can now understand that things don't disappear when they leave their vision (object permeance)."
         }
       ]
     },
     {
-      "name": "Preoperational",
+      "name": "Pre-operational",
       "lowAge": 2 * 12,
       "highAge": 7 * 12,
       "info":
-          "In this stage, your child is learning to use symbols and language to communicate. They will start to use their imagination and engage in pretend play. However, they might struggle with taking other people's perspectives and understanding that others might have different thoughts and feelings.",
+          "In this stage, your child will learn how to use language, but they still won't understand complex logic. They will start pretend playing, mimicking jobs and actions they see others do. They may also take part in parallel play around other kids: playing independently despite knowing there are other kids around. Your child probably won't understand the reversibility of most processes: they don't think they can reuse Legos they just used to build a tower. They may also have animism, thinking that inanimate objects like their stuffed animals have feelings like humans. ",
       "substages": [
         {
           "lowAge": 2 * 12,
-          "highAge": 4 * 12,
+          "highAge": 5 * 12,
           "info":
-              "Your child will start to use symbols like words and images to represent the world. They might also start to engage in pretend play with objects."
+              "Unfortunately, your child is most likely egocentric right now. It isn't as bad as it sounds: they can't understand others' point of view. They might assume you know something you don't just because they do because of this. "
         },
         {
-          "lowAge": 4 * 12,
+          "lowAge": 5 * 12,
           "highAge": 7 * 12,
           "info":
-              "Your child's language skills will improve significantly, and they will start to use language to communicate with others."
+              "Your child has probably grown out of egocentrism and can now empathize with others. "
         }
       ]
     },
