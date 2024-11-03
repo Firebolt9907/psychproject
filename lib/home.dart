@@ -68,9 +68,11 @@ class _HomePageState extends State<HomePage> {
     // than having to individually change instances of widgets.
     return Scaffold(
       appBar: CupertinoNavigationBar(
-        middle: Text(widget.age <= 9
+        middle: Text(widget.age.round() < 9
             ? "Age of Child: ${widget.age.round()} Month${widget.age.round() == 1 ? "" : "s"} Pregnant"
-            : 'Age of Child: ${widget.age.round() > 20 ? '${(widget.age.round() - 9) ~/ 12} Year${(widget.age.round() - 9) ~/ 12 == 1 ? "" : "s"}' : ""}${widget.age > 21 && (widget.age.round() - 9) % 12 != 0 ? ' and ' : ""}${(widget.age.round() - 9) % 12 == 0 ? "" : '${(widget.age.round() - 9) % 12} Month${(widget.age.round() - 9) % 12 == 1 ? "" : "s"} Old'}'),
+            : widget.age.round() == 9
+                ? "Age of Child: Newborn"
+                : 'Age of Child: ${widget.age.round() > 20 ? '${(widget.age.round() - 9) ~/ 12} Year${(widget.age.round() - 9) ~/ 12 == 1 ? "" : "s"}' : ""}${widget.age > 21 && (widget.age.round() - 9) % 12 != 0 ? ' and ' : widget.age.round() > 20 ? " Old${widget.age.round() >= 18 * 12 + 8 ? " and Beyond" : ""}" : ""}${(widget.age.round() - 9) % 12 == 0 ? "" : '${(widget.age.round() - 9) % 12} Month${(widget.age.round() - 9) % 12 == 1 ? "" : "s"} Old'}'),
         border: Border.all(color: Colors.transparent),
         backgroundColor: Colors.transparent,
       ),
